@@ -6,7 +6,7 @@ Credit for the design and inspiration for this project goes to Daniel Schiffman 
 Credit for general structure of algorithms goes to Jamis Buck
 The same algorithms written and implemented in Ruby can be found at: http://weblog.jamisbuck.org/2011/2/7/maze-generation-algorithm-recap
 
-General explanation of each algorithm:
+Here are some general explanations of each algorithm
 
 Random Walkers:
 
@@ -40,4 +40,4 @@ Special Cases:
 	Recursive - 
 
 
-Instructions:
+Instructions on Usage:
