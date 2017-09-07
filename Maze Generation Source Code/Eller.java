@@ -5,7 +5,7 @@
  *
  */
 
- import java.util.LinkedList;
+import java.util.LinkedList;
 
 public class Eller extends MazeGenerator {
   private boolean madeVerticalCut;
@@ -104,50 +104,7 @@ public class Eller extends MazeGenerator {
       current.isCurrent=false;
     }
   }
-/*
-  public Cell[][] generateMaze(int width, int height, int numCells){
-    initializeMaze(width, height, numCells);
-    sets = new TreeSet[numCells][numCells];
-    for(int r = 0; r < maze.numCells; r++) {
-      for(int c = 0; c < maze.numCells; c++) {
-        if(sets[r][c] == null) {
-          sets[r][c] = new TreeSet();
-        }
-        if(c < maze.numCells - 1){
-          if(sets[r][c + 1] == null) {
-            sets[r][c + 1] = new TreeSet();
-          }
-          if(mergeSets() && !sets[r][c].isConnected(sets[r][c + 1])) {
-            removeWall(maze.cells[r][c], maze.cells[r][c + 1]);
-            sets[r][c].connect(sets[r][c + 1]);
-          }
-          else if(r==maze.numCells - 1 && !sets[r][c].isConnected(sets[r][c + 1])) {
-            removeWall(maze.cells[r][c], maze.cells[r][c + 1]);
-              sets[r][c].connect(sets[r][c + 1]);
-          }
-        }
-      }
-      if(r < maze.numCells - 1){
-        boolean madeVerticalCut = false;
-        LinkedList<TreeSet> rowSets = getSets(r);
-        for(TreeSet set: rowSets){
-          while(!madeVerticalCut){
-            for(int c = 0; c < maze.numCells; c++) {
-              if(sets[r][c].isConnected(set) && branchSet()){
-                sets[r + 1][c] = new TreeSet();
-                removeWall(maze.cells[r][c], maze.cells[r + 1][c]);
-                sets[r][c].connect(sets[r + 1][c]);
-                madeVerticalCut = true;
-              }
-            }
-          }
-        madeVerticalCut = false;
-        }
-      }
-    }
-    return maze.cells;
-  }
-*/
+
   public LinkedList<TreeSet> getSets(int row) {
     LinkedList<TreeSet> rowSet = new LinkedList<TreeSet>();
     for(int c = 0; c < maze.numCells; c++){
