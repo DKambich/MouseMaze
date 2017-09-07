@@ -8,26 +8,36 @@ The same algorithms written and implemented in Ruby can be found at: http://webl
 
 General explanation of each algorithm:
 
-Aldous Broder - 
+Random Walkers:
 
-Backtracker - 
+	Aldous Broder - 
+	
+	Backtracker -
 
-Binary Tree -
+	Hunter -
+	
+ 	Wilson -
 
-Eller - 
+Biased Trees:
 
-Growing Tree - 
+	Binary Tree -
 
-Hunter -
+	Eller - 
 
-Kruskal - 
+	Sidewinder - 
 
-Prim -
 
-Recursive - 
+Minimum Spanning Trees:
 
-Sidewinder - 
+	Kruskal - 
 
-Wilson -
+	Prim -
+
+Special Cases:
+
+	Growing Tree - 
+
+	Recursive - 
+
 
 Instructions:
