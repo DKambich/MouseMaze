@@ -10,10 +10,16 @@ Here are some general explanations of each algorithm
 
 Random Walkers:
 
-	Aldous Broder - One of the simplest algorithms to implement. It simply starts at a random cell in the maze and chooses a random neighbor to move to. 
-	If the random neighbor has not been visited, it removes the wall between the current cell and the neighbor. This repeats until the every cell in the maze has been visited.
+	Aldous Broder - One of the simplest algorithms to implement. It simply starts at a random cell in the maze and 
+	chooses a random neighbor to move to. If the random neighbor has not been visited, it removes the wall between 
+	the current cell and the neighbor. This repeats until the every cell in the maze has been visited.
 	
-	Backtracker -
+	Backtracker - This algorithm utilizes a stack to implement backtracking. It starts at a random cell in the
+	maze and looks for unvisited neighbor cells. If an unvisited neighbor is found, it pushes the current cell 
+	onto the stack, removes the wall between the current cell and the neighbor cell, then moves to the 
+	neighbor. If no unvisited neighbor cell is found, it pops from the stack until a cell that has an unvisited
+	neighbor is found. This process is then repeated until the stack is empty.
+
 
 	Hunter -
 	
