@@ -57,6 +57,7 @@ public class Hunter extends MazeGenerator {
             current.visited=true;
           }
         }
+        //Continuing through the maze in row-col order
         if(col + 1 == maze.numCells) {
           row++;
         }
