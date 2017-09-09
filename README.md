@@ -23,7 +23,7 @@ Random Walkers:
 	Hunter - It starts at a random cell in the maze and selects a random unvisited neighbor. If an unvisited
 	neighbor is found, it removes the wall between the current cell and the neighbor cell, then moves to the
 	neighbor cell. If there are no unvisited neighbors for the current cell (i.e. the maze has double back on
-	itself) the algorithm switches to hunt mode. It goes through the maze in row-column fashion, checking if the 
+	itself) the algorithm switches to hunt mode. It goes through the maze in row-column order, checking if the 
 	current cell has any visited cell. Once it has found a cell with a visited neighbor, it removes the wall
 	between them. Then the current cell begins the 'random walk' again, looking for unvisited neighbors. This
 	repeats until all cells are visited.
@@ -40,12 +40,24 @@ Random Walkers:
 
 Biased Trees:
 
-	Binary Tree -
+	Binary Tree - This algorithm slightly mimics the behaviour of a binary tree data structure. It starts at the
+	first cell of the maze. It then goes through in row-column and either removes a wall between the cell to the 
+	East or South of the current cell, marking the current cell as visited. This process repeats for every cell, 
+	except for the very rightmost column and bottommost row, until all cells have been visited.
 
-	Eller - 
-
-	Sidewinder - 
-
+	Eller - This algorithm is the most complicated of the biased trees. It starts by assigning each cell in the
+	first row to its own set then randomly carves East on the row, combining sets that have connected cells.
+	Next, it goes through each set of cells on the current row and carves South at least once per set, adding the
+	carved cell to the set. Move to the next row and assign any cells that are not in a set to a new one. Repeat
+	the previous steps until the final row is reached. Once the last row is reached, connect any differing sets
+	and remove the walls between the newly connected cells.
+	
+	Sidewinder - This algorithm starts by initializing a set of cells for the current row and sets the current 
+	cell to the first cell in the maze. It then adds the current cell to the row set. Next, it decides whether
+	to carve East randomly, removing the wall if yes. If a passage was carved, make the eastern cell the current
+	cell and repeat the previous steps. Otherwise, carve a passage North, clear the row set, and set the next 
+	cell in the row to be the current cell, and repeat the previous steps. This repeats until all the cells have
+	been visited.
 
 Minimum Spanning Trees:
 
