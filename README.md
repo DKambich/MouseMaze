@@ -20,6 +20,8 @@ Instructions on Usage:
 
 6. Right clicking on the maze allows you to either pause the animation or reset the current generation
 
+
+
 Here are some general explanations of each algorithm
 
 Random Walkers:
@@ -51,7 +53,7 @@ Random Walkers:
 	cell then restarts to its original location, following the directional path layed out and removing walls as it
 	goes until reaching the visitied cell. A new random cell is then picked and the process repeats until all
 	cells have been visited.
-
+	
 Biased Trees:
 
 	Binary Tree - This algorithm slightly mimics the behaviour of a binary tree data structure. It starts at the
@@ -75,12 +77,25 @@ Biased Trees:
 
 Minimum Spanning Trees:
 
-	Kruskal - 
+	Kruskal - This algorithm starts by putting all the North and West connections of cells into an ArrayList.
+	Next, add each cell to its own set. A random connection is then pulled. If it connects two sets that aren't
+	connected already, then remove the wall between the cells and combine their sets. Otherwise, discard the 
+	connection. Repeat this until there are no edges left in the ArrayList.
 
-	Prim -
+	Prim - This algorithm starts by selecting a random cell in the maze and adding all its possible connections
+	to a ArrayList. It then selects a random connection and makes the cell the new current cell. The wall between
+	the previous cell and the new current cell is removed, the connection is discarded, and the current cells 
+	unvisited connections are added. This repeats until the ArrayList is empty.
 
 Special Cases:
 
-	Growing Tree - 
+	Growing Tree - This algorithm can act very similar to the Prim or Backtracker algorithm depending on how it
+	is implemented. It starts by creating an empty list of cells and adding a single random cell to it. A cell
+	is then chosen from the list and it carves a passage to a single unvisited neighbor. The neighbor is then 
+	added to the list and the orginally selected cell is removed. This repeats until the list is empty of cells.
+	The algorithm's behaviour changes depending on how the cell is selected. If it selected at random, then it
+	will act like the Prim algorithm. If the most recently added cell is selected it will act like the Backtracker.
 
-	Recursive - 
+	Recursive - This algorithm starts without any walls in the maze. Next, a wall bisects the current section of
+	the maze, adding only one opening in it. This repeats recursively on both sections of the bisect until it 
+	reaches the scale of only two cells. Once the recursion finishes, the maze is complete.
