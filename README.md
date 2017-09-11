@@ -6,6 +6,20 @@ Credit for the design and inspiration for this project goes to Daniel Shiffman (
 Credit for the general structure of algorithms goes to Jamis Buck.
 The same algorithms written and implemented in Ruby can be found at: http://weblog.jamisbuck.org/2011/2/7/maze-generation-algorithm-recap
 
+Instructions on Usage:
+
+1. Open the included jar file or run the main method in Maze.java
+
+2. Use the menu bar to select options of the animation
+
+3. Speed alters how fast the maze generates
+
+4. Size alters how large of a maze is generated
+
+5. Style alters which algorithm is used to generate the maze
+
+6. Right clicking on the maze allows you to either pause the animation or reset the current generation
+
 Here are some general explanations of each algorithm
 
 Random Walkers:
@@ -70,18 +84,3 @@ Special Cases:
 	Growing Tree - 
 
 	Recursive - 
-
-
-Instructions on Usage:
-
-1. Open the includeed jar file or run the main method in Maze.java
-
-2. Use the menu bar to select options of the animation
-
-3. Speed alters how fast the maze generates
-
-4. Size alters how large of a maze is generated
-
-5. Style alters which algorithm is used to generate the maze
-
-6. Right clicking on the maze allows you to either pause the animation or reset the current generation
