@@ -73,3 +73,15 @@ Special Cases:
 
 
 Instructions on Usage:
+
+1. Open the includeed jar file or run the main method in Maze.java
+
+2. Use the menu bar to select options of the animation
+
+3. Speed alters how fast the maze generates
+
+4. Size alters how large of a maze is generated
+
+5. Style alters which algorithm is used to generate the maze
+
+6. Right clicking on the maze allows you to either pause the animation or reset the current generation
