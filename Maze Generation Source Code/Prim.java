@@ -1,9 +1,9 @@
 /**
- * Prim.java
- *
- * @author: Daniel Kambich
- *
- */
+* Prim.java
+*
+* @author: Daniel Kambich
+*
+*/
 
 import java.util.ArrayList;
 
@@ -13,7 +13,7 @@ public class Prim extends MazeGenerator {
   private Wall nextWall;
 
   public Prim(Maze maze) {
-    this.maze=maze;
+    this.maze = maze;
   }
 
   public void startMaze(int width, int height, int numCells) {
