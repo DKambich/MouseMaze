@@ -6,6 +6,12 @@ import mousemaze.Cell;
 import mousemaze.Maze;
 import mousemaze.MazeGenerator;
 
+/**
+ * Sidewinder.java
+ *
+ * @author: Daniel Kambich
+ *
+ */
 public class Sidewinder extends MazeGenerator {
   private ArrayList<Cell> runSet;
   private Cell current;

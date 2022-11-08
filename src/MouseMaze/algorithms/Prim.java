@@ -1,10 +1,4 @@
 package mousemaze.algorithms;
-/**
-* Prim.java
-*
-* @author: Daniel Kambich
-*
-*/
 
 import java.util.ArrayList;
 
@@ -12,6 +6,12 @@ import mousemaze.Cell;
 import mousemaze.Maze;
 import mousemaze.MazeGenerator;
 
+/**
+ * Prim.java
+ *
+ * @author: Daniel Kambich
+ *
+ */
 public class Prim extends MazeGenerator {
   private ArrayList<Wall> walls;
   private Cell current;
@@ -29,30 +29,30 @@ public class Prim extends MazeGenerator {
   }
 
   public void stepMaze() {
-    if(walls.size() > 0) {
-      if(nextWall != null) {
+    if (walls.size() > 0) {
+      if (nextWall != null) {
         nextWall.toCell.isCurrent = false;
       }
       int nextIndex = (int) (Math.random() * walls.size());
       nextWall = walls.get(nextIndex);
       current = nextWall.fromCell;
-      if(!nextWall.toCell.visited) {
+      if (!nextWall.toCell.visited) {
         nextWall.createPassage();
         nextWall.toCell.isCurrent = true;
-        walls.addAll(generateWalls(nextWall.toCell, getUnvisitedNeighbors(nextWall.toCell.getRow(), nextWall.toCell.getCol())));
+        walls.addAll(
+            generateWalls(nextWall.toCell, getUnvisitedNeighbors(nextWall.toCell.getRow(), nextWall.toCell.getCol())));
       }
       walls.remove(nextWall);
-    }
-    else {
+    } else {
       current.isCurrent = false;
     }
   }
 
-  public ArrayList<Wall> generateWalls(Cell fromCell, ArrayList<Cell> toCells){
+  public ArrayList<Wall> generateWalls(Cell fromCell, ArrayList<Cell> toCells) {
     ArrayList<Wall> walls = new ArrayList<Wall>();
-    for(Cell cell: toCells){
+    for (Cell cell : toCells) {
       Wall next = new Wall(fromCell, cell);
-      if(!next.toCell.visited) {
+      if (!next.toCell.visited) {
         walls.add(next);
       }
     }
@@ -67,7 +67,7 @@ public class Prim extends MazeGenerator {
       toCell = to;
     }
 
-    public void createPassage(){
+    public void createPassage() {
       removeWall(fromCell, toCell);
       fromCell.visited = true;
       toCell.visited = true;

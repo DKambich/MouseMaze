@@ -6,7 +6,6 @@ package mousemaze;
  * @author: Daniel Kambich
  *
  */
-
 import java.awt.Color;
 import java.awt.Graphics;
 

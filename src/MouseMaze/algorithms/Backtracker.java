@@ -1,10 +1,4 @@
 package mousemaze.algorithms;
-/**
- * Backtracker.java
- *
- * @author: Daniel Kambich
- *
- */
 
 import java.util.Stack;
 
@@ -12,6 +6,12 @@ import mousemaze.Cell;
 import mousemaze.Maze;
 import mousemaze.MazeGenerator;
 
+/**
+ * Backtracker.java
+ *
+ * @author: Daniel Kambich
+ *
+ */
 public class Backtracker extends MazeGenerator {
   private Cell current;
   private Stack<Cell> visited;
@@ -23,35 +23,34 @@ public class Backtracker extends MazeGenerator {
 
   public void startMaze(int width, int height, int numCells) {
     initializeMaze(width, height, numCells);
-    //Begin at a random cell in the maze
-    current = maze.cells[(int) (Math.random()*numCells)][(int) (Math.random()*numCells)];
-    //Push the first visited cell on the stack
+    // Begin at a random cell in the maze
+    current = maze.cells[(int) (Math.random() * numCells)][(int) (Math.random() * numCells)];
+    // Push the first visited cell on the stack
     visited.push(current);
   }
 
   public void stepMaze() {
-    if(visited.size() > 0) {
-      //If there are cells left in the stack, visit the current cell
+    if (visited.size() > 0) {
+      // If there are cells left in the stack, visit the current cell
       current.visited = true;
       current.isCurrent = false;
-      //Retrieve a new random unvisited neighbor
+      // Retrieve a new random unvisited neighbor
       Cell next = getRandomUnvisitedNeighbor(current.getRow(), current.getCol());
-      if(next != null) {
-        //If there is a new random unvisted neighbor, push the neighbor onto the stack
+      if (next != null) {
+        // If there is a new random unvisted neighbor, push the neighbor onto the stack
         visited.push(current);
-        //Remove the wall between the current and next cell
+        // Remove the wall between the current and next cell
         removeWall(current, next);
-        //Set the current cell to the new neighbor
+        // Set the current cell to the new neighbor
         current = next;
-      }
-      else {
-        //There are no new random unvisted neighbors, so pop from the visited stack to backtrack
+      } else {
+        // There are no new random unvisted neighbors, so pop from the visited stack to
+        // backtrack
         current = visited.pop();
       }
       current.isCurrent = true;
-    }
-    else {
-      //The maze is completed
+    } else {
+      // The maze is completed
       current.isCurrent = false;
     }
   }

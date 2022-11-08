@@ -10,7 +10,6 @@ import mousemaze.MazeGenerator;
  * @author: Daniel Kambich
  *
  */
-
 public class AldousBroder extends MazeGenerator {
   private Cell current;
 

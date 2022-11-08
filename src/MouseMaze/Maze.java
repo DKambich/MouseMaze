@@ -39,7 +39,6 @@ import javax.swing.JRadioButtonMenuItem;
  * @author: Daniel Kambich
  *
  */
-
 public class Maze {
   public static void main(String[] args) {
     Maze test = new Maze();

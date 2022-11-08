@@ -6,7 +6,6 @@ package mousemaze;
  * @author: Daniel Kambich
  *
  */
-
 import java.util.ArrayList;
 
 public abstract class MazeGenerator {
