@@ -29,6 +29,14 @@ xcopy /s /e /h .\assets .\out\assets
 cd out
 java MouseMaze/Maze
 ```
+Building a Jar File (Windows):
+```
+cd src
+javac -d out MouseMaze/Maze.java
+xcopy /s /e /h .\assets .\out\assets
+cd out
+jar cvfe MouseMaze.jar MouseMaze/Maze .
+```
 
 
 Here are some general explanations of each algorithm
