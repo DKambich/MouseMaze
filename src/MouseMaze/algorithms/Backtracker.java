@@ -1,4 +1,4 @@
-package MouseMaze.algorithms;
+package mousemaze.algorithms;
 /**
  * Backtracker.java
  *
@@ -6,10 +6,11 @@ package MouseMaze.algorithms;
  *
  */
 
-import MouseMaze.Cell;
-import MouseMaze.Maze;
-import MouseMaze.MazeGenerator;
 import java.util.Stack;
+
+import mousemaze.Cell;
+import mousemaze.Maze;
+import mousemaze.MazeGenerator;
 
 public class Backtracker extends MazeGenerator {
   private Cell current;

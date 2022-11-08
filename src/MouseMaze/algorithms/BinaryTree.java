@@ -1,8 +1,8 @@
-package MouseMaze.algorithms;
+package mousemaze.algorithms;
 
-import MouseMaze.Cell;
-import MouseMaze.Maze;
-import MouseMaze.MazeGenerator;
+import mousemaze.Cell;
+import mousemaze.Maze;
+import mousemaze.MazeGenerator;
 
 /**
  * BinaryTree.java

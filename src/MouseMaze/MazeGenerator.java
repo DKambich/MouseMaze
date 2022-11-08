@@ -1,4 +1,4 @@
-package MouseMaze;
+package mousemaze;
 
 /**
  * MazeGenerator.java

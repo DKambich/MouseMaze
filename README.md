@@ -24,18 +24,18 @@ Instructions on Usage:
 Compiling and Running (Windows):
 ```
 cd src
-javac -d out MouseMaze/Maze.java
-xcopy /s /e /h .\assets .\out\assets
+javac -d out mousemaze/Maze.java
+xcopy /s /e /h .\mousemaze\assets .\out\mousemaze\assets
 cd out
 java MouseMaze/Maze
 ```
 Building a Jar File (Windows):
 ```
 cd src
-javac -d out MouseMaze/Maze.java
-xcopy /s /e /h .\assets .\out\assets
+javac -d out mousemaze/Maze.java
+xcopy /s /e /h .\mousemaze\assets .\out\mousemaze\assets
 cd out
-jar cvfe MouseMaze.jar MouseMaze/Maze .
+jar cvfe MouseMaze.jar mousemaze/Maze .
 ```
 
 

@@ -1,16 +1,5 @@
-package MouseMaze;
+package mousemaze;
 
-import MouseMaze.algorithms.AldousBroder;
-import MouseMaze.algorithms.Backtracker;
-import MouseMaze.algorithms.BinaryTree;
-import MouseMaze.algorithms.Eller;
-import MouseMaze.algorithms.GrowingTree;
-import MouseMaze.algorithms.Hunter;
-import MouseMaze.algorithms.Kruskal;
-import MouseMaze.algorithms.Prim;
-import MouseMaze.algorithms.Recursive;
-import MouseMaze.algorithms.Sidewinder;
-import MouseMaze.algorithms.Wilson;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics;
@@ -23,6 +12,19 @@ import java.awt.event.ActionEvent;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.Timer;
+
+import mousemaze.algorithms.AldousBroder;
+import mousemaze.algorithms.Backtracker;
+import mousemaze.algorithms.BinaryTree;
+import mousemaze.algorithms.Eller;
+import mousemaze.algorithms.GrowingTree;
+import mousemaze.algorithms.Hunter;
+import mousemaze.algorithms.Kruskal;
+import mousemaze.algorithms.Prim;
+import mousemaze.algorithms.Recursive;
+import mousemaze.algorithms.Sidewinder;
+import mousemaze.algorithms.Wilson;
+
 import javax.swing.ButtonGroup;
 import javax.swing.ImageIcon;
 import javax.swing.JMenu;
@@ -66,7 +68,7 @@ public class Maze {
 
   public void setup() {
     window = new JFrame("MouseMaze");
-    window.setIconImage(new ImageIcon("../assets/logo-100x100.png").getImage());
+    window.setIconImage(new ImageIcon(Maze.class.getResource("assets/logo-100x100.png")).getImage());
     bar = new JMenuBar();
     panel = new Panel();
 

@@ -1,16 +1,10 @@
-package MouseMaze.algorithms;
+package mousemaze.algorithms;
 
-/**
- * Sidewinder.java
- *
- * @author: Daniel Kambich
- *
- */
-
-import MouseMaze.Cell;
-import MouseMaze.Maze;
-import MouseMaze.MazeGenerator;
 import java.util.ArrayList;
+
+import mousemaze.Cell;
+import mousemaze.Maze;
+import mousemaze.MazeGenerator;
 
 public class Sidewinder extends MazeGenerator {
   private ArrayList<Cell> runSet;

@@ -1,4 +1,4 @@
-package MouseMaze.algorithms;
+package mousemaze.algorithms;
 /**
 * Prim.java
 *
@@ -6,10 +6,11 @@ package MouseMaze.algorithms;
 *
 */
 
-import MouseMaze.Cell;
-import MouseMaze.Maze;
-import MouseMaze.MazeGenerator;
 import java.util.ArrayList;
+
+import mousemaze.Cell;
+import mousemaze.Maze;
+import mousemaze.MazeGenerator;
 
 public class Prim extends MazeGenerator {
   private ArrayList<Wall> walls;
