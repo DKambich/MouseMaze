@@ -2,7 +2,7 @@
 
 ![Mouse Maze](./MouseMaze%20Header.png "Mouse Maze")
 
-Inspired by the idea of lab mice navigating mazes, MouseMaze is a program that generates mazes using a variety of algorithms. The maze creation process is animated, detailing exactly how the mazes reach their final state. Several options can be tweaked, including the type of algorithm used, generation speed, and the maze size.
+Inspired by the idea of lab mice navigating mazes, MouseMaze is a Java program that generates mazes using a variety of algorithms. The maze creation process is animated, detailing exactly how the mazes reach their final state. Several options can be tweaked, including the type of algorithm used, generation speed, and the maze size.
 
 ## Instructions
 
@@ -115,9 +115,9 @@ jar cvfe MouseMaze.jar mousemaze/Maze .
     the maze, adding only one opening in it. This repeats recursively on both sections of the bisect until it
     reaches the scale of only two cells. Once the recursion finishes, the maze is complete.
 
-## Inspiration
+## Inspiration and Attribution
 
-Credit for the design and inspiration for this project goes to Daniel Shiffman (https://youtu.be/HyK_Q5rrcr4)
+Credit for the general design and inspiration for this project goes to Daniel Shiffman (https://youtu.be/HyK_Q5rrcr4)
 
 Credit for the general structure of algorithms goes to Jamis Buck.
 The same algorithms written and implemented in Ruby can be found at: http://weblog.jamisbuck.org/2011/2/7/maze-generation-algorithm-recap
