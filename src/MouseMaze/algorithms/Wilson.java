@@ -1,3 +1,7 @@
+package MouseMaze.algorithms;
+import MouseMaze.Cell;
+import MouseMaze.Maze;
+import MouseMaze.MazeGenerator;
 import java.util.ArrayList;
 /**
  * Wilson.java

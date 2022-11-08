@@ -1,3 +1,4 @@
+package MouseMaze.algorithms;
 /**
  * GrowingTree.java
  *
@@ -5,6 +6,9 @@
  *
  */
 
+import MouseMaze.Cell;
+import MouseMaze.Maze;
+import MouseMaze.MazeGenerator;
 import java.util.ArrayList;
 
 public class GrowingTree extends MazeGenerator {

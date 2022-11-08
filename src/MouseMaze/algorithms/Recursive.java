@@ -1,3 +1,8 @@
+package MouseMaze.algorithms;
+
+import MouseMaze.Cell;
+import MouseMaze.Maze;
+import MouseMaze.MazeGenerator;
 
 /**
 * Recursive.java
@@ -6,7 +11,6 @@
 *
 */
 
-import java.util.ArrayList;
 import java.util.Stack;
 
 public class Recursive extends MazeGenerator

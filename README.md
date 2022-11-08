@@ -21,6 +21,15 @@ Instructions on Usage:
 6. Right clicking on the maze allows you to either pause the animation or reset the current generation
 
 
+Compiling and Running (Windows):
+```
+cd src
+javac -d out MouseMaze/Maze.java
+xcopy /s /e /h .\assets .\out\assets
+cd out
+java MouseMaze/Maze
+```
+
 
 Here are some general explanations of each algorithm
 
