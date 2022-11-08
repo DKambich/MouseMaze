@@ -1,6 +1,6 @@
 # MouseMaze
 
-![alt text](./MouseMaze%20Header.png "Title")
+![Mouse Maze](./MouseMaze%20Header.png "Mouse Maze")
 
 Inspired by the idea of lab mice navigating mazes, MouseMaze is a program that generates mazes using a variety of algorithms. The maze creation process is animated, detailing exactly how the mazes reach their final state. Several options can be tweaked, including the type of algorithm used, generation speed, and the maze size.
 
