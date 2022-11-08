@@ -27,7 +27,7 @@ cd src
 javac -d out mousemaze/Maze.java
 xcopy /s /e /h .\mousemaze\assets .\out\mousemaze\assets
 cd out
-java MouseMaze/Maze
+java mousemaze/Maze
 ```
 Building a Jar File (Windows):
 ```
