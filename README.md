@@ -6,7 +6,7 @@ Inspired by the idea of lab mice navigating mazes, MouseMaze is a Java program t
 
 ## Instructions
 
-1. Open the included jar file or run the main method in Maze.java
+1. Run the included `MouseMaze.jar` file or run the main method in `Maze.java`
 2. Use the menu bar to tweak options for the animation
    - Speed alters how fast the maze generates
    - Size alters how large of a maze is generated
@@ -19,7 +19,7 @@ Inspired by the idea of lab mice navigating mazes, MouseMaze is a Java program t
 
 ### Compiling and Running (Windows):
 
-```
+```bash
 cd src
 javac -d out mousemaze/Maze.java
 xcopy /s /e /h .\mousemaze\assets .\out\mousemaze\assets
@@ -29,7 +29,7 @@ java mousemaze/Maze
 
 ### Building a Jar File (Windows):
 
-```
+```bash
 cd src
 javac -d out mousemaze/Maze.java
 xcopy /s /e /h .\mousemaze\assets .\out\mousemaze\assets
